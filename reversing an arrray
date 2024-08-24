@@ -1,4 +1,4 @@
-//Reversing an array using swap() built in function
+//Reversing an array using swap() built-in function
 #include<iostream>
 using namespace std;
 int main()
