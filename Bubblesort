@@ -1,0 +1,36 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n;
+    cout<<"\tBubble sort";
+    cout<<"\nEnter Number of Array Input:";
+    cin>>n;
+    int a[n];
+    cout<<"Enter array element:";
+    for(int i=0;i<n;i++)
+    {
+        cin>>a[i];
+    }
+    cout<<"original array :";
+    for(int i=0;i<n;i++)
+    {
+        cout<<a[i]<<" ";
+    }
+    //Bubble sort
+    for(int i=n-2;i>=0;i--)
+    {
+        for(int j=0;j<=i;j++)
+        {
+            if(a[j]>a[j+1])
+            swap(a[j],a[j+1]); 
+        }
+    }
+     cout<<"\nSorted array :";
+        for(int i=0;i<n;i++)
+    {
+        cout<<a[i]<<" ";
+    }
+
+return 0;
+}
